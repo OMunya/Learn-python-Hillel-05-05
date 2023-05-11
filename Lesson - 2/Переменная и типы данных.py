@@ -29,9 +29,9 @@ print(round(how_need_to_pay, 2))  # округлям число до двух з
 size_get = float(input())  # доход
 size_percent = float(input())  # налог
 
-how_much_need_to_pay_podatok = size_get / 100 * size_percent  # присваиваем имя для новой переменной
+how_much_need_to_pay_podatok = size_get / 100 * size_percent  # сколько нужно заплатить налога
 
-clear_we_get = size_get - (size_get / 100 * size_percent)  # присваиваем имя для новой переменной
+clear_we_get = size_get - (size_get / 100 * size_percent)  # чистый налог
 
 print(round(how_much_need_to_pay_podatok, 2))  # округлям число до двух знаков после запятой
 print(round(clear_we_get, 2))  # округлям число до двух знаков после запятой
@@ -40,10 +40,10 @@ print(round(clear_we_get, 2))  # округлям число до двух зн�
 
 fuel_consumption = float(input())  # расход топлива на 100 км
 present_price = float(input())  # цена за 1 л на сегодня
-money_need = float(input())  # Сколько денег нам нужно на это растояние
+fuel_distance = float(input())  # Сколько килломентров нужно проехать
 
-tank_for_some_distance = fuel_consumption / 100 * money_need  # присваиваем имя для новой переменной
-how_we_must_spend = fuel_consumption / 100 * money_need * present_price  # присваиваем имя для новой переменной
+fuel_for_some_distance = fuel_consumption / 100 * fuel_distance  # сколько машина потратит литров
+how_we_must_spend = fuel_consumption / 100 * fuel_distance * present_price  # расходы
 
 print(round(how_we_must_spend, 2))  # округлям число до двух знаков после запятой
 
