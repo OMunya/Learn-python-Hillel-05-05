@@ -1,4 +1,5 @@
 
+# Цикл while будет повторяться бесконесное колличество раз при помощи True:
 
 while True:
     question = input("Write you text for boat, please: ")
@@ -10,7 +11,7 @@ while True:
         print("Соррі що втручуюсь, не знаю про що йдеться мова, але подивіться серіал 'Swagger', він просто бомба!")
     elif "Бувай".lower() in question or "Надобраніч".lower() in question or "Гудбай".lower() in question or "До зустрічі".lower() in question:
         print("Побачимось у мережі, I'll be back.")
-        break
+        break  # выход из цикла
 
     else:
         print("Дуже цікаво, але, нажаль, нічого не зрозуміло :(")

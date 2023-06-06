@@ -1,5 +1,5 @@
-sum = 0
-total = 0
+counter = 0  # сумма чисел будет записываться в переменную сума
+total = 0  # в переменную будут записываться значения, которые мы преобразовуем в try
 
 while True:
     text = input("Введіть число або sum будь-ласка!")
@@ -8,7 +8,7 @@ while True:
         print(sum)
         break
     try:
-        interger = float(text)
+        interger = float(text)  # пытаемся число преобразовать в вещественное
         total += interger
 
     except ValueError:
